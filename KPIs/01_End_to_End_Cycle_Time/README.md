@@ -30,4 +30,4 @@ The SQL logic (found in `cycle_time.sql`) addresses the complexity of Jira's his
 2.  **Exclusions:** Filters out non-story items (Bugs, Tasks) to ensure we are measuring feature velocity.
 
 ## 📊 Visualisation
-![Cycle Time Chart](./cycle_time_chart.png)
+![Cycle Time Chart](./cycle-time-chart.png)
