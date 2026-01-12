@@ -3,6 +3,9 @@
 ## 📖 Definition
 The overall monthly percentage of User Stories that failed the **'Code Review'** status (transitioned to 'Failed Review'), out of all stories that entered that status.
 
+> **Formula:**
+> $$ \text{Failure Rate (\%)} = \frac{\sum (\text{Transitions from 'Code Review' to 'Failed Review'})}{\text{Unique Stories entering 'Code Review'}} \times 100 $$
+
 ## 💡 Business Value & Relevance
 This is an **internal team efficiency metric**. It measures the "First-Pass Quality" of development work before it reaches formal QA.
 
@@ -23,7 +26,10 @@ As a Project Manager, I use this data to drive improvements, not to blame indivi
 *   **Cohort Alignment:** Calculated monthly, based on the month the story **first entered 'Under Validation' (QA)**. This ensures this quality metric aligns with the "Time to QA" KPI.
 *   **Assumption:** This metric reflects the quality of the team's *collective* output.
 
-## ⚙️ Technical Logic
+## ⚙️ Technical Implementation
 The SQL logic (found in `code_review_failure_rate.sql`) includes advanced filtering:
 1.  **Denominator:** Counts *unique* stories. If a story fails 3 times, it is still one "opportunity," but generates 3 "failure" events.
-2.  **Developer Mapping:** The query includes logic to attribute stories to specific developers (based on who moved it to 'Rea
+2.  **Developer Mapping:** The query includes logic to attribute stories to specific developers (based on who moved it to 'Ready'), allowing for granular drill-downs if coaching is required.
+
+## 📊 Visualisation
+![Failure Rate Chart](./failure_rate_chart.png)
