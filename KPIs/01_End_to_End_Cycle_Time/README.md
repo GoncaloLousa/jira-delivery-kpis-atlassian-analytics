@@ -3,9 +3,6 @@
 ## 📖 Definition
 The average number of days required to deliver a User Story from the moment it is committed to development (`Ready`) until it is fully completed and approved (`Done`).
 
-> **Formula:**
-> $$ \text{Avg Cycle Time} = \frac{\sum (\text{Max(Date Done)} - \text{Min(Date Ready)})}{\text{Total Stories Completed}} $$
-
 ## 💡 Business Value & Management Insights
 This metric is the primary indicator of **Flow Efficiency**. It measures the total time to deliver value, capturing every stage of the lifecycle including Development, QA, and UAT (Validation).
 
