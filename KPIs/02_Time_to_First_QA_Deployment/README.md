@@ -3,9 +3,6 @@
 ## 📖 Definition
 The average number of days from the moment development starts (`Ready`) until the story is **first** handed over to Quality Assurance (`Under Validation`).
 
-> **Formula:**
-> $$ \text{Avg Time to QA} = \frac{\sum (\text{Min(Date Under Validation)} - \text{Min(Date Ready)})}{\text{Total Stories}} $$
-
 ## 💡 Business Value & Relevance
 While "End-to-End Cycle Time" measures the whole process, this KPI isolates the **Development Phase**. It is a pure measure of coding throughput.
 
